@@ -16,7 +16,7 @@ public class test1 {
     public void setUp(){
         // In case your user is assign to a single project you can provide an empty string, 
         // otherwise please specify the project name
-        grid = new GridClient("eyalk", "Admin1234", "default", "cloud.experitest.com",443, true);
+        grid = new GridClient("eyal.kopelevich", "Experitest2012", "default", "sales.experitest.com",443, true);
         client = grid.lockDeviceForExecution("chrome", "@os='android'", 10, 50000);
         client.setProjectBaseDirectory(projectBaseDirectory);
         client.setReporter("xml", "reports", "chrome");
